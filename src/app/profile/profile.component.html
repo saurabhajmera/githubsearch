@@ -1,3 +1,14 @@
+<form class="search-form" name="search-user-form">
+  <div class="input-group">
+    <div class="input-group-addon"><span><i class="glyphicon glyphicon-search"></i></span></div>
+    <input class="form-control" type="text" placeholder="Enter Username..." [(ngModel)]="username" name="username"
+           (keyup)="searchUser()">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="button">Search</button>
+    </div>
+  </div>
+</form>
+
 <!--{{user.login}}-->
 
 <div *ngIf='user'>
